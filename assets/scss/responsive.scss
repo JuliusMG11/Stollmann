@@ -1,0 +1,81 @@
+// RESPONSIVE
+
+$bp-smallMobile: 20.625rem; // 330px
+$bp-mobile: 31.25rem; // 500px
+$bp-smallTablet: 50rem; // 800px
+$bp-tablet: 64rem; // 1024px
+$bp-laptop: 96rem; // 1536px
+$bp-computer: 115.625rem; // 1850px
+$bp-bigScreen: 128rem; //2048px -- 2k
+$bp-bigerScreen: 160rem; // 2560px
+
+
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+        @if $point == bigerScreen {
+            @media (min-width: $bp-bigerScreen) { 
+            @content ; 
+            }
+    }
+
+    @else if $point == bigScreen {
+            @media (min-width: $bp-bigScreen) { 
+            @content ; 
+            }   
+        }
+
+        @else if $point == computer {
+            @media (min-width: $bp-computer) { 
+            @content ; 
+            }   
+    }
+        @else if $point == laptop {
+            @media (min-width: $bp-laptop) { 
+            @content ; 
+            }
+    }
+        @else if $point == tablet {
+            @media (min-width: $bp-tablet)  { 
+            @content ; 
+            }
+    }
+        @else if $point == smallTablet {
+            @media (min-width: $bp-smallTablet)  { 
+            @content ; 
+            }
+        }
+    @else if $point == mobile {
+            @media (min-width: $bp-mobile)  { 
+            @content ; 
+            }
+    }
+
+    @else if $point == smallMobile {
+        @media (min-width: $bp-smallMobile)  { 
+        @content ; 
+        }
+    }
+}
+
+
+// RESPONSIVE
+
+
+
+// MOBILE MENU
+
+@media (min-width: 300px) {
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@include breakpoint(tablet) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
