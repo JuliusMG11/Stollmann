@@ -32,7 +32,7 @@
 
     <section class="servicing-box">
       <figure class="icon">
-        <img src="@/assets/svg/ObyvaciPokoje.svg" alt="" />
+        <img src="@/assets/svg/obyvaciPokoje.svg" alt="" />
       </figure>
 
       <div class="">
@@ -42,7 +42,7 @@
 
     <section class="servicing-box">
       <figure class="icon">
-        <img src="@/assets/svg/Predajne.svg" alt="" />
+        <img src="@/assets/svg/predajne.svg" alt="" />
       </figure>
 
       <div class="">
