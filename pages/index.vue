@@ -13,7 +13,7 @@
                 nábytku podľa vašich prianí
               </p>
 
-              <button class="mt-4" @click="goto('onas')">Viac o nas</button>
+              <button class="mt-4">Viac o nas</button>
             </div>
 
             <div class="hero-object absolute">
