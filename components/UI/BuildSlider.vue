@@ -24,9 +24,11 @@
             </figure>
             <figure class="image-two absolute">
               <img
+                v-if="post.imageTwo.length"
                 :src="require(`~/assets/img/the-works/${post.imageTwo}.jpg`)"
                 alt=""
               />
+              <img v-else src="" />
             </figure>
           </section>
           <!--   <button @click="moveToIndex()">move to page 3</button> -->
@@ -49,27 +51,27 @@ export default {
       posts: [
         {
           id: 1,
-          title: 'Kuchyne',
+          title: 'Dvere',
           content:
             'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'kuchyna1',
-          imageTwo: 'kuchyna2',
+          imageOne: 'dvere2',
+          imageTwo: '',
         },
         {
           id: 2,
-          title: 'Obývačky',
+          title: 'Altánky',
           content:
             'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'obyvacka1',
-          imageTwo: 'obyvacka2',
+          imageOne: 'altanky1',
+          imageTwo: 'altanky2',
         },
         {
-          id: 3,
-          title: 'Ostatné',
+          id: 2,
+          title: 'Schody',
           content:
             'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'ostatne1',
-          imageTwo: 'ostatne2',
+          imageOne: 'schody1',
+          imageTwo: 'schody2',
         },
       ],
     };

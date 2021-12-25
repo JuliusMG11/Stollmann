@@ -1,7 +1,6 @@
 <template>
   <div class="hero-slider">
-    <img :src="images[currentNumber % images.length]" />
-
+    <img :src="require(`~/assets/img/img-slider/${getImage}.jpg`)" />
     <div class="arrows-group absolute flex justify-end p-2">
       <div
         class="prev-arrow relative flex justify-between items-center"
@@ -59,21 +58,23 @@ export default {
   },
   data() {
     return {
-      images: [
-        'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',
-        'https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg',
-      ],
+      images: ['image1', 'image2', 'image3', 'image4'],
 
       currentNumber: 0,
       timer: null,
     };
+  },
+  computed: {
+    getImage() {
+      return this.images[this.currentNumber % this.images.length];
+    },
   },
   mounted() {
     this.startRotation();
   },
   methods: {
     startRotation() {
-      this.timer = setInterval(this.next, 6000);
+      //    this.timer = setInterval(this.next, 6000);
     },
 
     next() {

@@ -13,7 +13,7 @@
                 nábytku podľa vašich prianí
               </p>
 
-              <button class="mt-4">Viac o nas</button>
+              <button class="mt-4" @click="scrollToAbout">Viac o nas</button>
             </div>
 
             <div class="hero-object absolute">
@@ -95,6 +95,14 @@ export default {
     TheWorks,
     TheMaterials,
     TheContact,
+  },
+  methods: {
+    scrollToAbout() {
+      const aboutScroll = document.getElementById('about');
+      aboutScroll.scrollIntoView({
+        behavior: 'smooth',
+      });
+    },
   },
 };
 </script>

@@ -76,13 +76,15 @@
           class="tab-pane fade"
           :class="{ 'active show': isActive('profile') }"
         >
-          <work-slider class="relative z-20" />
+          <office-slider class="relative z-20" />
         </div>
         <div
           id="contact"
           class="tab-pane fade"
           :class="{ 'active show': isActive('contact') }"
-        ></div>
+        >
+          <build-slider class="relative z-20" />
+        </div>
       </div>
     </div>
   </div>
@@ -91,6 +93,8 @@
 <script>
 import DownIcon from '../components/UI/DownIcon.vue';
 import WorkSlider from '../components/UI/WorkSlider.vue';
+import OfficeSlider from '../components/UI/OfficeSlider.vue';
+import BuildSlider from '../components/UI/BuildSlider.vue';
 import KitchenIcon from '../components/UI/KitchenIcon.vue';
 
 export default {
@@ -98,8 +102,9 @@ export default {
     DownIcon,
     WorkSlider,
     KitchenIcon,
+    OfficeSlider,
+    BuildSlider,
   },
-
   data() {
     return {
       activeItem: 'home',

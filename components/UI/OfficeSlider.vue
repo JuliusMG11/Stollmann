@@ -49,27 +49,11 @@ export default {
       posts: [
         {
           id: 1,
-          title: 'Kuchyne',
+          title: 'Kancelársky nábytok',
           content:
             'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'kuchyna1',
-          imageTwo: 'kuchyna2',
-        },
-        {
-          id: 2,
-          title: 'Obývačky',
-          content:
-            'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'obyvacka1',
-          imageTwo: 'obyvacka2',
-        },
-        {
-          id: 3,
-          title: 'Ostatné',
-          content:
-            'Možnosť výberu materiálov podľa vlastného výberu priamo u dodávateľov. Montáž je samozrejmosťou. ',
-          imageOne: 'ostatne1',
-          imageTwo: 'ostatne2',
+          imageOne: 'office1',
+          imageTwo: 'office2',
         },
       ],
     };
